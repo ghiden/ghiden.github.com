@@ -23,7 +23,6 @@ Then, initialize it, or you just create a file called 'Guardfile':
 
 Open the Guardfile, copy and paste this:
 
-    # if you have created this file with init, remove the generated example
     guard 'shell' do
       watch(/^.*\.rb$/) { `rake` }
     end
