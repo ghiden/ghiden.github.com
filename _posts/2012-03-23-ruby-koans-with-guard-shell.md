@@ -13,7 +13,7 @@ But as you progress, you will see occasional surprises, and from those, you lear
 It comes with autotest setup but I don't use autotest.  
 I prefer guard. For Koans, guard-shell works good.  
 First, download the Koans form their [site](http://rubykoans.com/ "Learn Ruby with the EdgeCase Ruby Koans"). Extract the zip to somewhere. Cd to there.  
-Then install guard-shell:
+Then install [guard-shell](https://github.com/guard/guard-shell):
 
     gem install guard-shell
 
