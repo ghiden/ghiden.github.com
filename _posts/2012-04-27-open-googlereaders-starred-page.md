@@ -74,7 +74,7 @@ And, I added some exception handling.
     import sys
     import gdata.service
     import json
-    import os
+    import subprocess
     from getpass import getpass
     import urllib
     from gdata.service import BadAuthentication
@@ -99,32 +99,41 @@ And, I added some exception handling.
     token = service.Get('/reader/api/0/token',converter=lambda x:x)
 
     query = gdata.service.Query(feed='/reader/atom/user/-/state/com.google/starred')
-    feed = service.Get(query.ToUri())
-    if len(feed.entry) == 0:
-        print "No starred item found"
-        sys.exit()
+    total = 0
+    cleared = 0
 
-    for entry in feed.entry:
-        url = entry.GetHtmlLink().href
-        # open in Chrome
-        os.system("open %s -a 'Google Chrome'" % url)
-        print entry.title.text
-        print entry.GetHtmlLink().href
+    while True:
+        feed = service.Get(query.ToUri())
+        count = len(feed.entry)
+        total += count
+        if count == 0:
+            break
+        for entry in feed.entry:
+            url = entry.GetHtmlLink().href
+            # open in Chrome
+            result = subprocess.call(["open", "-a", "Google Chrome", url])
+            print entry.title.text
+            print entry.GetHtmlLink().href
 
-        # now unstar it
-        i = entry.id.text
-        s = entry.source.extension_attributes['{http://www.google.com/schemas/reader/atom/}stream-id']
-        ret = service.Post(urllib.urlencode({
-            'i':i,
-            'r':'user/-/state/com.google/starred',
-            's':s,
-            'T':token
-            }),
-            '/reader/api/0/edit-tag',
-            converter = lambda x:x,
-            extra_headers = {'Content-Type':'application/x-www-form-urlencoded'})
-        print "Unstar result: %s [id: %s]" % (ret, i)
-        print "==============================================================="
+            if result != 0:
+                print "Error opening the item"
+            else:
+                # now unstar it
+                i = entry.id.text
+                s = entry.source.extension_attributes['{http://www.google.com/schemas/reader/atom/}stream-id']
+                ret = service.Post(urllib.urlencode({
+                    'i':i,
+                    'r':'user/-/state/com.google/starred',
+                    's':s,
+                    'T':token
+                    }),
+                    '/reader/api/0/edit-tag',
+                    converter = lambda x:x,
+                    extra_headers = {'Content-Type':'application/x-www-form-urlencoded'})
+                cleared += 1
+                print "Unstar result: %s [id: %s]" % (ret, i)
+            print "==============================================================="
+    print "%d starred item found and %d cleared" % (total, cleared)
 
 You can just name this little script to something recognizable and execute it from your shell.  
 I guess it would be nice if it is a little app that sits on my desktop and by double-clicking, it opens all my starred items.  
