@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Open Google Reaader's Starred Items Part II"
+title: "Open Google Reader's Starred Items Part II"
 category: 
 tags: [python]
 ---
