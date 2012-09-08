@@ -15,8 +15,8 @@ Of course, I know HTML and CSS too.
 Things that I use for work these days: Ruby on Rails and Node.js
 
 Little bits of personal stuff:
-* currently living in Japan working for Orange Labs
-* spent 7.5 years in the U.S. when I was a student: started with learning English, spent quite a few years in community college, at last graduated from Cal Berkeley with Computer Scienece degree.
+* just started living in Auckland, New Zealand, in 2012
+* spent 7.5 years in the U.S. when I was a student: started with learning English, spent quite a few years in community college learning various kinds of stuff, at last graduated from Cal Berkeley with Computer Scienece degree.
 * married with two kids
 
 <a href="https://twitter.com/ghiden" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ghiden</a>
