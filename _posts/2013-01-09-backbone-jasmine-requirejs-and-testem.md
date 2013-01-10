@@ -113,7 +113,7 @@ require(['jquery'], function($) {
 
 {% endhighlight %}
 
-Pretty much typical jasmine setup, except the last part loading spec files. The array 'spec' which holds the names of spec files are loaded by RequireJS. Currently it has no files to read in.  
+Pretty much typical jasmine setup, except the last part loading spec files. The array 'specs' which holds the names of spec files are loaded by RequireJS. Currently it has no files to read in.  
 
 Now, you need to install Testem. Suppose you have npm installed onto your machine. Install it globally is the easiest.
 
