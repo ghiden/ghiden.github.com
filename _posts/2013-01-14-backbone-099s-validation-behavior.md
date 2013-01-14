@@ -93,5 +93,4 @@ describe('validation', function() {
 {% endhighlight %}
 
 Now, you can keep on testing hopefully.  
-<https://github.com/ghiden/backbone-requirejs-jasmine-testem-setup>
-
+<https://github.com/ghiden/backbone-requirejs-jasmine-testem-setup/tree/blog2>

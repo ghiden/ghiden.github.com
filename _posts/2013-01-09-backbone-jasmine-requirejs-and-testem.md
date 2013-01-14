@@ -197,5 +197,6 @@ Thanks to the authors of these two articles, this post is heavily influenced by 
 [Setting Up a Jasmine Unit Testing Environment with Testem](http://www.joezimjs.com/javascript/setting-up-a-jasmine-unit-testing-environment-with-testem/) by Joe Zim.
 
 Reposity of this sample code:
-<https://github.com/ghiden/backbone-requirejs-jasmine-testem-setup>
+<https://github.com/ghiden/backbone-requirejs-jasmine-testem-setup/tree/blog1>
+
 
