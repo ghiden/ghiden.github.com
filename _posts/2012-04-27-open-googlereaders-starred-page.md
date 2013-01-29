@@ -2,7 +2,7 @@
 layout: post
 title: "Open Google Reader's Starred Items"
 category: 
-tags: [python]
+tags: [python, google-api]
 ---
 {% include JB/setup %}
 

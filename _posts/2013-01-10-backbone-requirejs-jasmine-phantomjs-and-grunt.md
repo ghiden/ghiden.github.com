@@ -2,7 +2,7 @@
 layout: post
 title: "Backbone, RequireJS, Jasmine, PhantomJS, and Grunt"
 category: 
-tags: [javascript]
+tags: [javascript, backbone, requirejs]
 ---
 {% include JB/setup %}
 

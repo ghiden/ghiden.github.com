@@ -2,7 +2,7 @@
 layout: post
 title: "Google's application specific passwords"
 category: 
-tags: [python]
+tags: [python, google-api]
 ---
 {% include JB/setup %}
 

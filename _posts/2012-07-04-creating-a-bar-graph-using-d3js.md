@@ -2,7 +2,7 @@
 layout: post
 title: "Creating a bar graph using D3.js"
 category: 
-tags: [javascript]
+tags: [javascript, d3]
 ---
 {% include JB/setup %}
 

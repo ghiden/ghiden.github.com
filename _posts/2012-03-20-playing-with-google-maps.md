@@ -2,7 +2,7 @@
 layout: post
 title: "Playing with Google Maps"
 category: 
-tags: [javascript]
+tags: [javascript, google-api]
 ---
 {% include JB/setup %}
 <div id="playground">

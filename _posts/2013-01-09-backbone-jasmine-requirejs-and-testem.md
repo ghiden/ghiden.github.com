@@ -2,7 +2,7 @@
 layout: post
 title: "Backbone, RequireJS, Jasmine, and Testem"
 category: 
-tags: [javascript]
+tags: [javascript, backbone, requirejs, jasmine]
 ---
 {% include JB/setup %}
 

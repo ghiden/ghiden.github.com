@@ -2,7 +2,7 @@
 layout: post
 title: "testing angularjs"
 category: 
-tags: [javascript]
+tags: [javascript, angularjs]
 ---
 {% include JB/setup %}
 

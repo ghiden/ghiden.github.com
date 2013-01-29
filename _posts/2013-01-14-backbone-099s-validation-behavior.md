@@ -2,7 +2,7 @@
 layout: post
 title: "Backbone 0.9.9's validation behavior"
 category: 
-tags: []
+tags: [javascript, backbone]
 ---
 {% include JB/setup %}
 
