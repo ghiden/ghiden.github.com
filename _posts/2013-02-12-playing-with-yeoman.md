@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Playing with Yeoman"
+title: "Playing with Yeoman, AngularJS, and CoffeeScript"
 category: 
 tags: [yeoman, coffeescript, angularjs]
 ---
