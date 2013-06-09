@@ -5,9 +5,10 @@ category:
 tags: [javascript, google-api]
 ---
 {% include JB/setup %}
+
 <div id="playground">
-  <div align="center" id="map">
-  </div>
+
+  <div align="center" id="map"></div>
 
   <table id="latlng">
     <tr>
@@ -24,6 +25,7 @@ tags: [javascript, google-api]
     <input id="address" type="text" size="60" name="address" value="Tokyo" />
     <input type="submit" class="btn" value="Search!" />
   </form>
+
 </div>
 
 I had to use Google Maps for my current project.
