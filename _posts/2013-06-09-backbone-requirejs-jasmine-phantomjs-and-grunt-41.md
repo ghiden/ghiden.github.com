@@ -63,7 +63,7 @@ After that, you should have a bower.json file with the following content:
 
 Grab run-jasmine.js. This script loads a page and parses the results from Jasmine.
 
-    curl -o https://raw.github.com/ariya/phantomjs/master/examples/run-jasmine.js -o test/lib/run-jasmine.js
+    curl https://raw.github.com/ariya/phantomjs/master/examples/run-jasmine.js -o test/lib/run-jasmine.js
 
 Here is index.html loading Jasmine and RequireJS files.
 
